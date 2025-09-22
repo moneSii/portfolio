@@ -14,6 +14,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  min-height: 5rem;
 }
 
 .card-icon {
@@ -22,6 +23,7 @@
 
 .card-header {
   width: 15%;
+  font-size: 12px;
 }
 
 .card-summary {
@@ -39,5 +41,12 @@
 }
 
 .extra-box {
-  width: 100%;
+  width: 30%;
+}
+
+.name,
+.status,
+.version {
+  margin: 0;
+  padding: 0;
 }

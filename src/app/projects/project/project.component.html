@@ -9,12 +9,14 @@
     SUMMARY
     <p class="summary">{{ project().content.summary }}</p>
   </div>
-  <div class="card-drop-down">Drop</div>
+  <div class="card-drop-down"><button (click)="onPress()">More</button></div>
   <!-- Drop Down -->
-
+  <!-- Add Enter & leave Animations -->
+  @if( status()){
   <div class="card-extra">
     <p class="features extra-box">{{ project().content.features }}</p>
     <p class="stack extra-box">{{ project().content.stack }}</p>
     <p class="upcoming extra-box">{{ project().content.upcoming }}</p>
   </div>
+  }
 </div>

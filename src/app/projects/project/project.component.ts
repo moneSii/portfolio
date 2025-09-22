@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 
 import { project } from '../project.model';
 
@@ -10,4 +10,10 @@ import { project } from '../project.model';
 })
 export class ProjectComponent {
   project = input.required<project>();
+
+  status = signal(false);
+
+  onPress() {
+    this.status.update((val) => !val);
+  }
 }
