@@ -1,0 +1,43 @@
+.card,
+.card-icon,
+.card-header,
+.card-summary,
+.card-drop-down,
+.card-extra,
+.extra-box {
+  border: solid 3px grey;
+}
+
+.card {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-icon {
+  width: 10%;
+}
+
+.card-header {
+  width: 15%;
+}
+
+.card-summary {
+  width: 60%;
+}
+.card-drop-down {
+  width: 5%;
+}
+.card-extra {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.extra-box {
+  width: 100%;
+}
