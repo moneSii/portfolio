@@ -1,0 +1,38 @@
+.container {
+  border: solid red 3px;
+  width: 40rem;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.profile,
+.profile-img,
+.profile-about,
+.links,
+.summary,
+.projects {
+  border: solid 3px grey;
+}
+
+.profile {
+  margin: 1rem;
+  display: flex;
+}
+
+.profile-img {
+  width: 90rem;
+  height: 17rem;
+}
+
+.profile-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.links,
+.summary,
+.project {
+  margin-top: 0;
+  margin-bottom: 0;
+}
