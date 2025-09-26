@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" (click)="onPress()">
   <div class="card-icon">ICON</div>
   <div class="card-header">
     <h2 class="name">{{ project().name }}</h2>
@@ -9,7 +9,7 @@
     SUMMARY
     <p class="summary">{{ project().content.summary }}</p>
   </div>
-  <div class="card-drop-down"><button (click)="onPress()">More</button></div>
+  <div class="card-drop-down">Drop Down Icon</div>
   <!-- Drop Down -->
   <!-- Add Enter & leave Animations -->
   @if( status()){
