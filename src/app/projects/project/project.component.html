@@ -1,5 +1,6 @@
-<div class="card" (click)="onPress()">
-  <div class="card-icon">ICON</div>
+@if (show){
+<div [class]="cardSize" (click)="onPress()" animate.enter="enter">
+  <div class="card-icon"><img src="/icons/placeholder.png" class="icon" /></div>
   <div class="card-header">
     <h2 class="name">{{ project().name }}</h2>
     <h3 class="status">{{ project().status }}</h3>
@@ -9,14 +10,18 @@
     SUMMARY
     <p class="summary">{{ project().content.summary }}</p>
   </div>
-  <div class="card-drop-down">Drop Down Icon</div>
-  <!-- Drop Down -->
-  <!-- Add Enter & leave Animations -->
-  @if( status()){
-  <div class="card-extra">
+  <div class="card-drop-down"><img src="/icons/menu.png" class="menu" /></div>
+
+  @if(status()){
+  <div
+    class="card-extra"
+    animate.enter="card-extra-enter"
+    animate.leave="card-extra-leave"
+  >
     <p class="features extra-box">{{ project().content.features }}</p>
     <p class="stack extra-box">{{ project().content.stack }}</p>
     <p class="upcoming extra-box">{{ project().content.upcoming }}</p>
   </div>
   }
 </div>
+}
